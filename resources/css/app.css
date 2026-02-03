@@ -1,0 +1,168 @@
+@import "tailwindcss";
+@import "../../vendor/livewire/flux/dist/flux.css";
+
+@source '../views';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../vendor/livewire/flux-pro/stubs/**/*.blade.php';
+@source '../../vendor/livewire/flux/stubs/**/*.blade.php';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+        Consolas, "Liberation Mono", "Courier New", monospace;
+
+    --color-zinc-50: #fafafa;
+    --color-zinc-100: #f5f5f5;
+    --color-zinc-200: #e5e5e5;
+    --color-zinc-300: #d4d4d4;
+    --color-zinc-400: #a3a3a3;
+    --color-zinc-500: #737373;
+    --color-zinc-600: #525252;
+    --color-zinc-700: #404040;
+    --color-zinc-800: #262626;
+    --color-zinc-900: #171717;
+    --color-zinc-950: #0a0a0a;
+
+    --color-accent: var(--color-neutral-800);
+    --color-accent-content: var(--color-neutral-800);
+    --color-accent-foreground: var(--color-white);
+}
+
+@layer theme {
+    .dark {
+        --color-accent: var(--color-white);
+        --color-accent-content: var(--color-white);
+        --color-accent-foreground: var(--color-neutral-800);
+    }
+}
+
+@layer base {
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
+}
+
+[data-theme="compdown"] {
+    color-scheme: light;
+}
+
+[data-flux-field]:not(ui-radio, ui-checkbox) {
+    @apply grid gap-2;
+}
+
+[data-flux-label] {
+    @apply !mb-0 !leading-tight;
+}
+
+input:focus[data-flux-control],
+textarea:focus[data-flux-control],
+select:focus[data-flux-control] {
+    @apply outline-hidden ring-2 ring-accent ring-offset-2 ring-offset-accent-foreground;
+}
+
+@layer components {
+    .btn {
+        @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-base font-semibold transition-all duration-200;
+    }
+
+    .btn-primary {
+        @apply bg-zinc-900 text-white shadow-sm hover:-translate-y-0.5 hover:bg-zinc-800;
+    }
+
+    .btn-secondary {
+        @apply border border-zinc-200 bg-white text-zinc-900 shadow-sm hover:-translate-y-0.5 hover:border-zinc-300;
+    }
+
+    .chip {
+        @apply inline-flex items-center rounded-md border border-zinc-200 bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-zinc-600;
+    }
+
+    .card {
+        @apply rounded-lg border border-zinc-200/80 bg-white shadow-sm;
+    }
+}
+
+@layer utilities {
+    @keyframes fade-up {
+        0% {
+            opacity: 0;
+            transform: translateY(18px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes float-soft {
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-6px);
+        }
+    }
+
+    .animate-fade-up {
+        animation: fade-up 0.7s ease-out both;
+    }
+
+    .animate-float-soft {
+        animation: float-soft 4s ease-in-out infinite;
+    }
+
+    .motion-delay-1 {
+        animation-delay: 0.08s;
+    }
+
+    .motion-delay-2 {
+        animation-delay: 0.16s;
+    }
+
+    .motion-delay-3 {
+        animation-delay: 0.24s;
+    }
+
+    .motion-delay-4 {
+        animation-delay: 0.32s;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animate-fade-up,
+    .animate-float-soft {
+        animation: none;
+    }
+}
+
+/* Match Prism code block background to container (no double background) */
+.code-block pre[class*="language-"],
+.code-block code[class*="language-"] {
+    background: transparent;
+}
+
+.code-block pre[class*="language-"] {
+    padding: 0;
+    margin: 0;
+}
+
+/* Unify Prism value colors in code examples (hex vs string mismatch) */
+.code-block .token.string,
+.code-block .token.attr-value,
+.code-block .token.number,
+.code-block .token.url {
+    color: #7ec699;
+}
+
+/* \[:where(&)\]:size-4 {
+    @apply size-4;
+} */
