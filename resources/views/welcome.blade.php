@@ -18,12 +18,10 @@
             <div>
                 <p class="text-base font-semibold">Compdown</p>
             </div>
-            <div class="hidden items-center gap-6 text-base text-zinc-600 md:flex">
-                <a class="hover:text-zinc-900" href="https://github.com/seblavoie/compdown" target="_blank" rel="noreferrer">GitHub</a>
-                <a class="hover:text-zinc-900" href="https://github.com/seblavoie/compdown#features" target="_blank" rel="noreferrer">Features</a>
-                <a class="hover:text-zinc-900" href="https://github.com/seblavoie/compdown#installation" target="_blank" rel="noreferrer">Install</a>
+            <div class="flex items-center gap-8">
+                <a class="text-base font-semibold text-zinc-600 hover:text-zinc-900" href="https://github.com/compdown/compdown" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="btn btn-primary" href="https://github.com/compdown/compdown/releases/latest/download/com.compdown.cep.zxp" target="_blank" rel="noreferrer">Download</a>
             </div>
-            <a class="btn btn-primary" href="https://github.com/seblavoie/compdown" target="_blank" rel="noreferrer">Download</a>
         </header>
 
         <main class="mx-auto flex w-full max-w-7xl flex-col items-center gap-10 px-6 pb-28 text-center sm:px-10">
@@ -36,10 +34,6 @@
                         Write a scene like a script. Keep it readable, shareable, and easy to update. Invite automation and AI into your workflow without sacrificing creative
                         control.
                     </p>
-                </div>
-                <div class="flex flex-wrap items-center justify-center gap-4">
-                    <a class="btn btn-primary" href="https://github.com/seblavoie/compdown" target="_blank" rel="noreferrer">Download</a>
-                    <a class="btn btn-secondary" href="https://github.com/seblavoie/compdown#minimal-example" target="_blank" rel="noreferrer">See a quick example</a>
                 </div>
             </section>
 
@@ -252,7 +246,8 @@ compositions:
                     <h2 class="text-3xl font-semibold">Download and start building scenes faster.</h2>
                     <p class="text-base text-white/70">A markup language for After Effects, ready for modern studio workflows.</p>
                 </div>
-                <a class="btn btn-secondary animate-float-soft" href="https://github.com/seblavoie/compdown" target="_blank" rel="noreferrer">Download</a>
+                <a class="btn btn-secondary animate-float-soft" href="https://github.com/compdown/compdown/releases/latest/download/com.compdown.cep.zxp" target="_blank"
+                    rel="noreferrer">Download</a>
             </div>
         </div>
     </section>
@@ -261,9 +256,7 @@ compositions:
         <div class="mx-auto flex w-full max-w-7xl flex-col items-start justify-between gap-4 px-6 py-10 text-base text-zinc-500 sm:flex-row sm:items-center sm:px-10">
             <p>A markup language for After Effects</p>
             <div class="flex gap-4">
-                <a class="hover:text-zinc-900" href="https://github.com/seblavoie/compdown" target="_blank" rel="noreferrer">GitHub</a>
-                <a class="hover:text-zinc-900" href="https://github.com/seblavoie/compdown#installation" target="_blank" rel="noreferrer">Install</a>
-                <a class="hover:text-zinc-900" href="https://github.com/seblavoie/compdown#features" target="_blank" rel="noreferrer">Features</a>
+                <a class="hover:text-zinc-900" href="https://github.com/compdown/compdown" target="_blank" rel="noreferrer">GitHub</a>
             </div>
         </div>
     </footer>
