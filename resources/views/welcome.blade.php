@@ -33,6 +33,7 @@
                 <p class="text-base font-semibold">Compdown</p>
             </div>
             <div class="flex items-center gap-8">
+                <a class="text-base font-semibold text-zinc-600 hover:text-zinc-900" href="http://docs.compdown.com/guide" target="_blank" rel="noreferrer">Docs</a>
                 <a class="text-base font-semibold text-zinc-600 hover:text-zinc-900" href="https://github.com/compdown/compdown" target="_blank" rel="noreferrer">GitHub</a>
                 <a class="btn btn-primary" href="https://github.com/compdown/compdown/releases/latest/download/com.compdown.cep.zxp" target="_blank" rel="noreferrer">Download</a>
             </div>
