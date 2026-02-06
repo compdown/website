@@ -60,10 +60,10 @@
     </div>
 
     <section class="mx-auto w-full max-w-7xl px-6 pb-24 sm:px-10">
-        <div class="grid gap-6 border-t border-zinc-200 pt-12 lg:grid-cols-3">
+        <div class="grid gap-6 border-t border-zinc-200 pt-12 lg:grid-cols-4">
             <div class="space-y-3">
                 <h3 class="text-xl font-semibold">Readable</h3>
-                <p class="text-base leading-relaxed text-zinc-600">Elegant syntax that stays clean when you ship it across teams.</p>
+                <p class="text-base leading-relaxed text-zinc-600">An elegant syntax that's simple to read and write.</p>
             </div>
             <div class="space-y-3">
                 <h3 class="text-xl font-semibold">Shareable</h3>
@@ -72,6 +72,10 @@
             <div class="space-y-3">
                 <h3 class="text-xl font-semibold">Fast</h3>
                 <p class="text-base leading-relaxed text-zinc-600">Copy, paste, process. Stay in After Effects and skip binary presets.</p>
+            </div>
+            <div class="space-y-3">
+                <h3 class="text-xl font-semibold">AI-friendly</h3>
+                <p class="text-base leading-relaxed text-zinc-600">If an AI can read and write the same text you use, it can help draft scenes and explore variations.</p>
             </div>
         </div>
     </section>
